@@ -23,3 +23,17 @@
 .about-spacing {
     padding: 3em 0;
 }
+
+.about-imageframe-base {
+    padding: 1em;
+    border-radius: 10px;
+    background: linear-gradient(#ED41A8 0%, #f55e5e 100%);
+}
+
+.about-me-image {
+    margin-top: -5em;
+}
+
+.about-car {
+    padding: 0 10em 20em 10em;
+}

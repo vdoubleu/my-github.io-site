@@ -1,7 +1,15 @@
 import React from "react";
+import { UncontrolledCarousel } from 'reactstrap';
 import ImageFrame from "./ImageFrame";
 
 import testImage from "../../../images/sethacks-site.png";
+import myImage from "../../../images/about/me.JPG";
+import roboticsImage from "../../../images/about/robotics.jpg";
+import setImage from "../../../images/about/set.jpg";
+import setImage2 from "../../../images/about/set2.jpg";
+import robImage1 from "../../../images/about/rob1.jpg";
+import codeImage from "../../../images/about/code.png";
+import neuralImage from "../../../images/about/neuralnet.png";
 
 import "../../../styles/components/about.css";
 
@@ -15,6 +23,30 @@ const About = () => {
         "I also enjoy helping out robotics teams and passing on my knowledge to younger members. There were many things that I wish I knew when I was starting out and this is my way of making sure the same mistakes aren't made by others. I've coached and mentored Lego FLL teams as well as highschool VEX teams (some of which have made worlds--GO 2381). This is my life passion and is absolutely something I love doing on the free time."
     ]
 
+    const involvementList = [
+        {
+            src: setImage,
+            altText: "image of SET conference",
+            caption: "",
+            header: "",
+            key: 1
+        },
+        {
+            src: setImage2,
+            altText: "image of SET conference",
+            caption: "",
+            header: "",
+            key: 2
+        },
+        {
+            src: robImage1,
+            altText: "image of robotics team",
+            caption: "",
+            header: "",
+            key: 3
+        }
+    ];
+
     return (
         <div>
             <div className="about-diagonal">
@@ -22,7 +54,7 @@ const About = () => {
                 <h2 className="base-page-header" > About Me </h2>
                 <div className="row about-info-row">
                     <p className="col-md-6" > {infoTexts[0]} </p>
-                    <ImageFrame imageSrc={testImage} className="col-md-6 d-flex align-items-center"/>
+                    <ImageFrame back="true" imageSrc={myImage} className="col-md-6 d-flex align-items-center about-me-image"/>
                 </div>
                 
                 <div className="row about-info-row" >
@@ -30,7 +62,7 @@ const About = () => {
                         <h3> Software Development </h3>
                         <p> {infoTexts[1]} </p>
                     </div>
-                    <ImageFrame imageSrc={testImage} className="col-md-6 d-flex align-items-center" />
+                    <ImageFrame imageSrc={codeImage} className="col-md-6 d-flex align-items-center" />
                 </div>
             </div>
             </div>
@@ -42,7 +74,7 @@ const About = () => {
                             <h3> AI Modelling </h3>
                             <p> {infoTexts[2]} </p>
                         </div>
-                        <ImageFrame imageSrc={testImage} className="col-md-6 order-md-1 d-flex align-items-center" />
+                        <ImageFrame imageSrc={neuralImage} className="col-md-6 order-md-1 d-flex align-items-center" />
                     </div>
                 </div>   
             </div>
@@ -53,7 +85,7 @@ const About = () => {
                         <h3> Robotics </h3>
                         <p> {infoTexts[3]} </p>
                     </div>
-                    <ImageFrame imageSrc={testImage} className="col-md-6 d-flex align-items-center" />
+                    <ImageFrame imageSrc={roboticsImage} className="col-md-6 d-flex align-items-center" />
                 </div>
 
             <hr />
@@ -62,7 +94,9 @@ const About = () => {
                     <h3> Community Involvment </h3>
                     <p> {infoTexts[4]} </p>
                     <p> {infoTexts[5]} </p>
-                    <ImageFrame imageSrc={testImage} />
+                    <div className="about-car" >
+                    <UncontrolledCarousel items={involvementList}/>
+                    </div>
                 </div>
             </div>
             

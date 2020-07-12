@@ -7,6 +7,8 @@ import securityImage from "../../../images/projects/turr.jpg";
 import mathSolverImage from "../../../images/projects/math_equation_solver.png";
 import cubeTimerImage from "../../../images/projects/cubetimer.png";
 import roboticsPredictionImage from "../../../images/projects/robotPrediction.png";
+import ngramImage from "../../../images/projects/ngram.png";
+import informImage from "../../../images/projects/inform.png";
 
 import "../../../styles/components/project.css";
 
@@ -20,10 +22,10 @@ const Project = () => {
                 link: "https://sethacks.ca/#/"
             },
             {
-                img: sethackSiteImage,
-                title: "Inform",
-                body: "A dynamic, publiclly sourced news feed that delivers popular and relevant content based on what you like and where you are",
-                link: ""
+                img: roboticsPredictionImage,
+                title: "Robotics Match Predictor v2",
+                body: "A collection of models along with my detailed throught process of how I modeled the outcome of VEX robotics matches",
+                link: "https://github.com/vdoubleu/robotics-match-predictor-v2"
             }
         ],
         [
@@ -34,15 +36,15 @@ const Project = () => {
                 link: "https://github.com/vdoubleu/Cosmo"
             },
             {
-                img: roboticsPredictionImage,
-                title: "Robotics Match Predictor v2",
-                body: "A collection of models along with my detailed throught process of how I modeled the outcome of VEX robotics matches",
-                link: "https://github.com/vdoubleu/robotics-match-predictor-v2"
-            }
+                img: informImage,
+                title: "Inform",
+                body: "A dynamic, user sourced news feed that delivers popular and relevant content based on what you like and where you are",
+                link: "https://github.com/vdoubleu/Inform"
+            },
         ],
         [
             {
-                img: sethackSiteImage,
+                img: ngramImage,
                 title: "N-Gram Language Model",
                 body: "An N-Gram Language Model trained on wikipedia articles and built using a custom implementation of hash maps and tries",
                 link: "https://github.com/vdoubleu/ngram-textgen-v2"
