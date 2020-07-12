@@ -1,0 +1,25 @@
+.about-diagonal {
+  background: linear-gradient(135deg, #373737 5%, #ED41A8 5%, #f55e5e 23%, #373737 23%);
+}
+
+@media (max-width: 768px) {
+    .about-diagonal {
+        background: none;
+    }
+}
+
+.about-info-row {
+    margin-bottom: 4em;
+}
+
+.about-center {
+    text-align: center;
+}
+
+.about-color-row {
+    background: linear-gradient(#ED41A8 0%, #f55e5e 100%);
+}
+
+.about-spacing {
+    padding: 3em 0;
+}

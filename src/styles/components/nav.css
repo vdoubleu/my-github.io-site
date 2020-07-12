@@ -1,0 +1,19 @@
+.nav-default-back {
+    background-color: #282828;
+}
+
+.nav-pink {
+    background-color: #ed41a8;
+    color: black;
+}
+
+.nav-resume {
+    color: inherit;
+}
+
+.nav-resume:hover {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+

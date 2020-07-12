@@ -1,0 +1,18 @@
+.contact-gradient-box {
+    position: fixed;
+    background: linear-gradient(#ed41a8 0%, #f55e5e 100%);
+    width: 100%;
+    height: 6.5em;
+    z-index: -1;
+}
+
+#contact-submit {
+    background: linear-gradient(#ed41a8 0%, #f55e5e 100%);
+    border: none;
+    border-radius: 10px;
+    color: #fcfcfc;
+    min-width: 7em;
+    width: 6%;
+    margin-top: 2em;
+    font-size: 1.5em;
+}
