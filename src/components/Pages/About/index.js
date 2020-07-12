@@ -2,7 +2,6 @@ import React from "react";
 import { UncontrolledCarousel } from 'reactstrap';
 import ImageFrame from "./ImageFrame";
 
-import testImage from "../../../images/sethacks-site.png";
 import myImage from "../../../images/about/me.JPG";
 import roboticsImage from "../../../images/about/robotics.jpg";
 import setImage from "../../../images/about/set.jpg";
@@ -95,7 +94,7 @@ const About = () => {
                     <p> {infoTexts[4]} </p>
                     <p> {infoTexts[5]} </p>
                     <div className="about-car" >
-                    <UncontrolledCarousel items={involvementList}/>
+                        <UncontrolledCarousel items={involvementList}/>
                     </div>
                 </div>
             </div>

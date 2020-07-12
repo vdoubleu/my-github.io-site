@@ -9,11 +9,11 @@ const ProjectDisplay = props => {
     const link = props.link;
 
     return(
-        <div className="col-md-6">
-            <a href={link}>
-                <div className="display-box">
+        <div className="col-md-6" >
+            <a href={link} >
+                <div className="display-box" >
                     <img alt="project" className="img-fluid display-img" src={projectImage} />
-                    <div className="display-overlay">
+                    <div className="display-overlay" >
                         <p className="display-text"> {body} </p>
                     </div>
                 </div>

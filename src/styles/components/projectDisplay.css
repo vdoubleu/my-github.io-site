@@ -7,25 +7,132 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -65%);
-    -ms-transform: translate(-50%, -65%);
     width: 80%;
     height: 70%;
     background-color: #373737;
     border-radius: 10px;
     padding: 0 1.5em; 
     text-align: center;
+    height: 75%;
+    transform: translate(-50%, -63%);
+    -ms-transform: translate(-50%, -63%);
+    font-size: 2em;
 }
 
 .display-box:hover .display-overlay {
-    opacity: 90%;
+    opacity: 0.9;
 }
 
 .display-text {
     color: #f2f2f2;
+    font-size: inherit;
 }
 
 .display-title {
     text-align: center;
     margin: 0.5em 0 1em 0;
+}
+
+@media (max-width: 1400px) {
+    .display-text {
+        font-size: 0.9em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+    }
+}
+
+@media (max-width: 1200px) {
+    .display-text {
+        font-size: 0.7em;
+    }
+    
+    .display-overlay {
+        height: 70%;
+        transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+    }
+}
+
+@media (max-width: 992px) {
+    .display-text {
+        font-size: 0.5em;
+    }
+    
+    .display-overlay {
+        height: 65%;
+        transform: translate(-50%, -71%);
+        -ms-transform: translate(-50%, -71%);
+    }
+}
+
+@media (max-width: 768px) {
+    .display-text {
+        font-size: 0.8em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+    }
+}
+
+@media (max-width: 576px) {
+    .display-text {
+        font-size: 0.7em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -65%);
+        -ms-transform: translate(-50%, -65%);
+    }
+}
+
+@media (max-width: 460px) {
+    .display-text {
+        font-size: 0.55em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -69%);
+        -ms-transform: translate(-50%, -69%);
+    }
+}
+
+@media (max-width: 400px) {
+    .display-text {
+        font-size: 0.45em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -72%);
+        -ms-transform: translate(-50%, -72%);
+    }
+}
+
+
+@media (max-width: 340px) {
+    .display-text {
+        font-size: 0.4em;
+    }
+    
+    .display-overlay {
+        transform: translate(-50%, -72%);
+        -ms-transform: translate(-50%, -72%);
+    }
+}
+
+@media (max-width: 300px) {
+    .display-text {
+        font-size: 5vw;
+    }
+
+    .display-overlay {
+        padding: 5vw 5vw;
+        height: 50vw;
+        transform: translate(-50%, -40vw);
+        -ms-transform: translate(-50%, -40vw);
+    }
 }

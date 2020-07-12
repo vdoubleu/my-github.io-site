@@ -30,10 +30,20 @@
     background: linear-gradient(#ED41A8 0%, #f55e5e 100%);
 }
 
-.about-me-image {
-    margin-top: -5em;
+@media (min-width: 768px) {
+    .about-me-image {
+        margin-top: -5em;
+    }
 }
 
-.about-car {
-    padding: 0 10em 20em 10em;
+@media (min-width: 1400px) {
+    .about-car {
+        padding: 0 10em 20em 10em;
+    }
+}
+
+@media (min-width: 1200px) {
+    .about-car {
+        padding: 0 8em 16em 8em;
+    }
 }
